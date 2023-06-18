@@ -1,0 +1,42 @@
+
+
+.about{
+    height: 100%;
+    padding: 60px 0;
+    background-color: #323946;
+
+    &__right{
+        max-width: 700px;
+        order: 1;
+
+        ul{
+            padding: 0 15px;
+            li{
+                font-size: 14px;
+                line-height: 18px;
+                padding: 10px 0;
+                position: relative;
+            }
+            li::before{
+                content: '●';
+                color: #0ef;
+                top: 8.5px;
+                left: -15px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .about__right ul li{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1030px){
+    .about__right{
+        order: 2;
+    }
+}

@@ -1,0 +1,90 @@
+
+
+.portfolio{
+    height: 100%;
+    padding: 60px 0;
+
+    text-align: center;
+    background-color: #323946;
+
+    &__projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 30px;
+        padding-top: 30px;
+
+        &_part{
+            width: 350px;
+            height: 230px;
+            border-radius: 20px;
+            overflow: hidden;
+
+            box-shadow: inset 0 0 100px 0px #000;
+            transition: .3s;
+
+            background-image: url(https://infogra.ru/wp-content/uploads/2016/02/2402_2_cover-666x382.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+
+            figcaption{
+                position: absolute;
+                padding: 0 20px;
+                transition: .5s;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background: rgb(9,9,121);
+                transform: translateY(100%);
+                background: linear-gradient(180deg, rgba(9,9,121,0) 5%, rgba(0,238,255,1) 100%);
+                
+                h3{
+                    font-size: 24px;
+                    padding-bottom: 12px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                }
+                p{
+                    line-height: 20px;
+                    font-size: 14px;
+                    padding-bottom: 15px;
+
+                }
+                img{
+                    background-color: #fff;
+                    padding: 10px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &_part:hover{
+            transform: scale(1.04);
+            figcaption{
+                transform: translateY(0%);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .portfolio__projects_part figcaption h3{
+        font-size: 24px;
+        padding-bottom: 12px;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    .portfolio__projects_part figcaption p{
+        line-height: 24px;
+        font-size: 16px;
+    }
+}

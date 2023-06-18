@@ -1,0 +1,26 @@
+
+
+.skills{
+    text-align: center;
+    padding: 60px 0;
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 500px;
+        margin: 40px auto;
+        
+        gap: 40px;
+
+        
+    }
+}
+
+@media(min-width: 768px) {
+    .skills__list img{
+        width: 45px;
+        height: 45px;
+    }
+}
